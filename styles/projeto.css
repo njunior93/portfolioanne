@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@500&family=Raleway:wght@500&display=swap');
+
+:root{
+    --amarelo: #FDC435;
+    --preto: black;
+    --cinza: #404040;
+    --branco: #F9FAFF;
+    --cinza-texto: #828282;
+    --fonte-cabecalho: 'Raleway', sans-serif;
+    --fonte-paragrafos: 'Nunito';
+    --fonte-titulos: 'Playfair Display'
+}
+
+body{
+    background-color: var(--branco);
+}
+
+main{
+    height: 100vw;
+}
+
+.cabecalho{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    height: 4em;
+}
+
+.cabecalho__lista__navegacao{
+    width: 50%;
+}
+
+.cabecalho__lista__navegacao__itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__lista__navegacao__link, .opcao-redes-sociais-item label{
+    font-family: var(--fonte-cabecalho);
+    color: #FFF;
+    font-size: 1.12rem; 
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-redes-sociais{
+    display: none;
+}
+
+.lista-rede-sociais{
+    display: none;
+}
+
+.botao-redes-sociais:checked~.container__redes-sociais{
+    background-color: #FDC435;
+    padding: 1.47em 0;
+}
+
+.botao-redes-sociais:checked~.lista-rede-sociais{
+    display: block;
+}
+
+.lista-rede-sociais{
+    margin-top: 0.6em;
+    position: absolute;
+    top: 100%;
+    right: 25%;
+}
+
+.opcoes-redes-sociais{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4em;
+}
+
+.rede-social-link{
+    font-family: var(--fonte-cabecalho);
+    color: var(--cinza);
+    font-size: 1.12rem; 
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5em 0.9em;
+}
+
+.linkedin{
+    padding: 0.5em 1.28em 0.5em 1.20em;
+}
+
+.linkedin:hover{
+    background-color: #0e76a8;
+    color: var(--branco);
+}
+
+.instagram:hover{
+    background-color: #a13f91;
+    color: var(--branco);
+
+}
+
+
+.rede-social-item{
+    width: 100%;
+}
+
+
+
+main{
+    height: 100%;
+    background-color: var(--branco);
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10em;
+    align-items: center;
+}
+
+.principal__titulo{
+    font-size: 3rem;
+    font-family: var(--fonte-titulos);
+    text-align: center;
+    padding-top: 3em;
+    width: 20%;
+}
+
+hr{
+    height: 4px;
+    background-color: var(--amarelo);
+    border: none;
+    width: 10%;
+}
+
+.principal__projetos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 7em;
+}
+
+
+.principal__projetos__projeto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+    width: 50%;
+    padding: 1.5em;
+    box-shadow: 4px 4px 1em var(--cinza-texto);
+    border-radius: 8px;
+    background-color: white;
+    transition: 1s all;
+}
+
+.principal__projetos__projeto:hover{
+    width: 51%;
+    box-shadow: 6px 6px var(--cinza-texto);
+}
+
+.principal__projetos__projeto__titulo{
+    font-family: var(--fonte-titulos);
+    font-size: 1.87rem;
+}
+
+
+
+.principal__projetos__projeto__texto{
+    color: var(--cinza-texto);
+    font-family: var(--fonte-paragrafos);
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo{
+    row-gap: 1.5em; 
+}
+
+
+.botao__saiba__mais{
+    border-radius: 6px;
+    border: 1px solid var(--cinza);
+    padding: 0.2em 1em;
+    font-size: 0.87rem;
+    text-decoration: none;
+    font-family: var(--fonte-paragrafos);
+    color: black;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza);
+    padding: 1.5em 8em;
+    text-align: center;
+    column-gap: 0.5em;
+    margin-top: 7em;
+}
+
+.rodape p{
+    color: var(--branco);
+    font-family: var(--fonte-cabecalho);
+}
+
+.rodape img{
+    width: 70%;
+}
+
+

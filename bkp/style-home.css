@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@500&family=Raleway:wght@500&display=swap');
+
+:root{
+    --amarelo: #FDC435;
+    --cinza: #404040;
+    --branco: #F9FAFF;
+    --cinza-texto: #828282;
+    --fonte-cabecalho: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: var(--amarelo);
+    box-sizing: border-box;
+}
+
+.todo-conteudo{  
+    background-color: var(--branco);
+    width: 180vh;
+    height: 89vh;
+    margin: 2em auto;   
+    border-radius: 16px;  
+    box-shadow: 10px 10px 1em #404040;
+}
+
+.cabecalho{  
+    background-color: var(--cinza);
+    padding: 1.5em 8em;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 16px 16px 0 0;
+}
+
+.cabecalho__lista__navegacao{
+    display: flex;  
+    justify-content: space-around;
+    width: 35%;
+}
+
+.cabecalho__lista__navegacao__item{
+    font-family: 'Raleway';
+    color: #FFF;
+    font-size: 1.12rem; 
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8em;
+    padding-right: 8em;
+    column-gap: 50px;
+}
+
+.principal__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.80em;
+}
+
+.principal__conteudo__titulo{
+    font-size: 3rem;
+    font-weight: 486;
+    font-family: 'Playfair Display', serif;
+}
+
+.principal__conteudo__texto{
+    font-size: 1.25rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--cinza-texto);
+    line-height: 1.2em;
+
+}
+
+.principal__conteudo__bt{
+    background-color: var(--amarelo);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: var(--cinza-texto);
+}
+
+.principal__conteudo__bt:hover{
+    background-color: #ffbd17;
+    color: var(--cinza);
+}
+
+.principal__conteudo__botoes{
+    display: flex;
+    column-gap: 1em;
+
+}
+
+.principal__conteudo__bt__linkedin{
+    border: 1px solid black;
+    background-color: var(--branco);
+}
+
+.principal__conteudo__bt__linkedin:hover{
+    background-color: #0e76a8;
+    color: white;
+}
+
+
+.principal__imagem{
+    width: 50%;
+    margin-top: 2.5em;
+}
+

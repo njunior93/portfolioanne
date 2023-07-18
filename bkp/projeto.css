@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@500&family=Raleway:wght@500&display=swap');
+
+:root{
+    --branco: #F9FAFF;
+    --cinza: #404040;
+}
+
+body{
+    background-color: var(--branco);
+}
+
+.cabecalho{
+    background-color: var(--cinza);
+    padding: 1.5em 8em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabecalho__lista__navegacao{
+    display: flex;
+    width: 35%;
+    column-gap: 5em;
+}
+
+.cabecalho__lista__navegacao__item{
+    font-family: 'Raleway', sans-serif;
+    color: var(--branco);
+    font-size: 1.12rem; 
+    font-weight: 500;
+    text-decoration: none;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16em;
+}
+
+.titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+}
+
+.projetos__projeto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2em;
+    border-radius: 1em;
+    box-shadow: 4px 4px 0.5em 0.2em #828282;
+    width: 70%;
+    padding: 1.5em;
+    background-color: white;
+}
+
+.projetos__projeto__conteudo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;   
+    width: 40%;
+}
+
+.projetos__projeto__conteudo__titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.projetos__projeto__conteudo__texto{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    display: inline;
+    color: #828282;
+}
+
+.botao__saiba__mais{
+    padding: 0.5em 1em;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #828282;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr{
+    color: black;
+    height: 30px;
+}
