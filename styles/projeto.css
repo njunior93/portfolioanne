@@ -305,9 +305,10 @@ li{
     }
 
     .principal__projetos__projeto{
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column-reverse;
+        row-gap: 1.5em;
     }
 
     .principal__projetos__projeto-invertido{
@@ -315,9 +316,13 @@ li{
         flex-direction: column;
     }
 
+    .conteudo{
+        row-gap: 1em; 
+    }
+
     .imagem{
-        width: 80%;
-        padding: 2em;
+        width: 100%;
+        padding: 0.5em;
     }
 
     .rodape{
