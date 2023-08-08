@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@500&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@500&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@500&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@500&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito:wght@500&family=Raleway:wght@700&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1em;
+  background-color: #F8F6F4;
+}
+
+main {
+  width: 70%;
+  padding: 1em;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(196, 223, 223);
+}
+.cabecalho .navegacao {
+  width: 50%;
+  padding: 1rem 0;
+}
+
+.lista__navegacao {
+  display: flex;
+  justify-content: space-between;
+}
+.lista__navegacao .lista__navegacao-item {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.lista__navegacao-redes li {
+  padding: 1em 1em;
+  border: 1px solid rgba(0, 0, 0, 0.699);
+  border-top: none;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cabecalho .navegacao {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+  .cabecalho .navegacao .lista__navegacao {
+    justify-content: space-between;
+  }
+  .cabecalho .navegacao .lista__navegacao .lista__navegacao-item {
+    font-size: 0.8333333333rem;
+  }
+  .cabecalho .navegacao .lista__navegacao-redes {
+    top: 199%;
+  }
+  .rodape .rodape__conteudo {
+    -moz-column-gap: 0.2rem;
+         column-gap: 0.2rem;
+    font-size: 12px;
+  }
+}
+.rodape {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(196, 223, 223);
+  padding: 1rem 0;
+}
+
+.rodape__conteudo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.699);
+}
+.rodape__conteudo img {
+  width: 50%;
+  cursor: pointer;
+}
+
+.principal__index {
+  background-color: white;
+}
+
+.principal__index__conteudo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "banner texto";
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  padding: 2rem;
+}
+.principal__index__conteudo .principal__index__conteudo-banner {
+  grid-area: banner;
+  align-self: center;
+}
+.principal__index__conteudo .principal__index__conteudo-banner .banner {
+  width: 100%;
+}
+.principal__index__conteudo .principal__index__conteudo-texto {
+  grid-area: texto;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "titulo" "texto" "botoes";
+  row-gap: 2rem;
+}
+.principal__index__conteudo .principal__index__conteudo-texto .titulo {
+  text-align: justify;
+  grid-area: titulo;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  max-width: 410px;
+  color: rgba(0, 0, 0, 0.699);
+}
+.principal__index__conteudo .principal__index__conteudo-texto .texto {
+  grid-area: texto;
+  font-family: "Nunito";
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #828282;
+  text-align: justify;
+  max-width: 400px;
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes {
+  grid-area: botoes;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes .botao {
+  padding: 0.4em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.699);
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes .botao:first-child {
+  background-color: #D2E9E9;
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes .botao:first-child:hover {
+  background-color: rgb(196, 223, 223);
+  font-weight: bold;
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes .botao:last-child {
+  border: 1px solid rgb(196, 223, 223);
+}
+.principal__index__conteudo .principal__index__conteudo-texto .botoes .botao:last-child:hover {
+  background-color: rgb(196, 223, 223);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+@media screen and (max-width: 414px) {
+  .principal__index {
+    width: 100%;
+  }
+  .principal__index .principal__index__conteudo-texto .titulo {
+    font-size: 1.6rem;
+  }
+  .principal__index .principal__index__conteudo-texto .botoes {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .principal__index__conteudo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+.principal__projetos__conteudo {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "titulo" "projetos";
+}
+.principal__projetos__conteudo .titulo {
+  grid-area: titulo;
+  text-align: justify;
+  grid-area: titulo;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 5em 0;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.principal__projetos {
+  grid-area: projetos;
+  margin-bottom: 8em;
+}
+.principal__projetos .principal__conteudo__projetos__lista {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8em;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "titulo-projeto imagem-projeto" "texto-projeto imagem-projeto" "botao-projeto imagem-projeto";
+  background: linear-gradient(300deg, rgb(255, 255, 255) 80%, rgb(227, 244, 244) 20%, rgb(227, 244, 244) 20%);
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  row-gap: 2em;
+  border-radius: 8px;
+  padding: 2em;
+  transition: 1s all;
+  width: 100%;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto h2 {
+  grid-area: titulo-projeto;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: auto;
+  align-self: center;
+  justify-self: start;
+  color: rgba(0, 0, 0, 0.699);
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto p {
+  grid-area: texto-projeto;
+  font-family: "Nunito";
+  font-size: 1rem;
+  color: #828282;
+  text-align: justify;
+  align-self: center;
+  line-height: 1.5em;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto a {
+  grid-area: botao-projeto;
+  width: auto;
+  padding: 0.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7692307692rem;
+  color: rgba(0, 0, 0, 0.699);
+  background-color: #D2E9E9;
+  align-self: center;
+  max-width: 60px;
+  text-align: center;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto a:hover {
+  background-color: rgb(196, 223, 223);
+  font-weight: bold;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto img {
+  grid-area: imagem-projeto;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.principal__projetos .principal__conteudo__projetos__lista .projeto:hover {
+  box-shadow: 0px 20px 5px 0px #828282;
+}
+
+.botao__redes:checked ~ .lista__navegacao-redes {
+  display: block;
+}
+
+@media screen and (max-width: 414px) {
+  .principal__projeto {
+    width: 100%;
+  }
+  .principal__projeto .principal__projetos__conteudo .principal__conteudo__projetos__lista .projeto h2 {
+    font-size: 1rem;
+  }
+  .principal__projeto .principal__projetos__conteudo .principal__conteudo__projetos__lista .projeto a {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 834px) {
+  .principal__projetos__conteudo .titulo {
+    font-size: 1.4rem;
+  }
+  .principal__projetos__conteudo .principal__conteudo__projetos__lista .projeto {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "titulo-projeto" "imagem-projeto" "texto-projeto" "botao-projeto";
+  }
+  .principal__projetos__conteudo .principal__conteudo__projetos__lista .projeto img {
+    border: 1px solid rgba(0, 0, 0, 0.699);
+  }
+}
+.principal__sobre .titulo {
+  text-align: justify;
+  grid-area: titulo;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 5em 0;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.principal__sobre__conteudo {
+  display: grid;
+  justify-content: center;
+  row-gap: 3em;
+  margin-bottom: 8em;
+  padding: 2rem;
+  grid-template-areas: "conteudo" "banner";
+}
+.principal__sobre__conteudo .principal__conteudo__sobre__texto {
+  display: grid;
+  grid-area: conteudo;
+}
+.principal__sobre__conteudo .principal__conteudo__sobre__texto .texto {
+  grid-area: texto;
+  font-family: "Nunito";
+  color: #828282;
+  text-align: justify;
+  align-self: center;
+  line-height: 2em;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.principal__sobre__conteudo .principal__conteudo__sobre__banner {
+  grid-area: banner;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.principal__sobre__conteudo .principal__conteudo__sobre__banner img {
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .principal__sobre {
+    width: 100%;
+  }
+  .principal__sobre .titulo {
+    font-size: 1.4rem;
+  }
+  .principal__sobre .principal__sobre__conteudo .principal__conteudo__sobre__texto p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .principal__conteudo__sobre__banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .principal__conteudo__sobre__banner img {
+    display: none;
+  }
+  .principal__conteudo__sobre__banner img:first-child {
+    display: block;
+    height: 180px;
+    width: 180px;
+  }
+}/*# sourceMappingURL=style.css.map */

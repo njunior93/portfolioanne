@@ -3,107 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">   
-    <link rel="stylesheet" href="styles/projeto.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        azul:{
+                            principal: '#C4DFDF',
+                            secundario: '#D2E9E9',
+                            terceario: '#E3F4F4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/cabecalho.css">
+    <link rel="stylesheet" href="./assets/styles/rodape.css">
     <title>Projetos</title>
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__lista__navegacao">
-            <ul class="cabecalho__lista__navegacao__itens">
-                <li class="cabecalho__lista__navegacao__item"><a href="index.html" class="cabecalho__lista__navegacao__link">Inicio</a></li>
-                <li class="cabecalho__lista__navegacao__item"><a href="sobre.html" class="cabecalho__lista__navegacao__link">Sobre mim</a></li> 
+        <nav class="navegacao ml-12">
+            <ul class="lista__navegacao relative">
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="index.html">Inicio</a></li>
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="sobre.html">Sobre mim</a></li>
+
+                <input type="checkbox" id="botao__redes" class="botao__redes hidden">
+
+                <label for="botao__redes">
+                    <li class="lista__navegacao-item cursor-pointer ">
+                            <span class="absolute -right-1 -top-2 flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                            </span>
+                        Rede Sociais
+                    </li>
+                </label>      
                 
-                <input type="checkbox" id="opção-redes-sociais" class="botao-redes-sociais">
-
-                <div class="container__redes-sociais">
-                        <label for="opção-redes-sociais">
-                                <li class="opcao-redes-sociais-item">Redes Sociais</li>
-                                <img class="opcao-redes-sociais-item-sanduiche"  src="assets/menu-sanduiche.png" alt="">
-                        </label>
-                </div>
-
-                <div class="lista-rede-sociais">                                                               
-                    <ul class="opcoes-redes-sociais">
-                        <h2 class="opcoes-redes-sociais-titulo">Redes Sociais</h2>
-                        <li class="rede-social-item linkedin"><a class="rede-social-link" href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/">Linkedin</a></li>
-                        <li class="rede-social-item instagram"><a class="rede-social-link" href="https://www.instagram.com/_annecatherine/">Instagram</a></li>
-                    </ul>
-                </div>
-            </ul>
+                <ul class="lista__navegacao-redes absolute top-10 -right-2 text-center rounded-b-lg hidden ">
+                    <li class="lista__navegacao-item hover:bg-azul-principal"><a href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/" class="lista__navegacao-link" target="_blank">Linkedin</a></li>
+                    <li class="lista__navegacao-item hover:bg-azul-principal"><a href="https://www.instagram.com/_annecatherine/" class="lista__navegacao-link" target="_blank">Instagram</a></li>
+                </ul>             
+            </ul>  
         </nav>
     </header>
 
-    <main>
-       <section class="container-principal">
-            <div class="principal__titulo">
-                <h1>Projetos</h1>
-                <hr>
-            </div>
+    <main class="principal__projeto">
+        <div class="principal__projetos__conteudo">
 
-            <div class="principal__projetos">
-                <div class="principal__projetos__projeto">
-                    <div class="bloco conteudo">
-                        <h2 class="principal__projetos__projeto__titulo">Geo.Preta</h2>
+            <h1 class="titulo">Projetos / Trabalhos</h1>
 
-                        <p class="principal__projetos__projeto__texto">Espaço aberto para o debate acerca das políticas públicas, violações dos direitos humanos e o racismo ambiental através do olhar geográfico</p>   
-                        
-                        <li><a href="https://www.instagram.com/geo.preta/" class="botao__saiba__mais">Saiba +</a></li>                  
-                    </div>
+            <section class="principal__projetos">
+                <ul class="principal__conteudo__projetos__lista">
+                    <li class="projeto rounded-xl shadow-md">
+                        <h2>Geo Preta</h2>
+                        <p>O Geo.preta foi um projeto idealizado e construído durante o período pandêmico por geógrafos pretos que tem como objetivo um espaço aberto para o debate acerca de políticas públicas, violação dos direitos humanos e o racismo ambiental através de um olhar geográfico.  O Geo.preta faz publicações pertinentes relacionando a geografia e as questões étnico raciais, promove eventos em que se tem debates pertinentes para construir a Geografia uma ciência cada vez mais engajada.</p>
+                        <a href="https://www.instagram.com/geo.preta/" target="_blank">Saiba +</a>
+                        <img src="./assets/img/geo_preta.png" alt="">
+                    </li>
 
-                    <div class="bloco imagem">
-                        <img src="assets/geo-preta.JPG" alt="Imagem projeto" class="projeto__imagem">
-                    </div>
-                </div>
+                    <li class="projeto rounded-xl shadow-md">
+                        <h2>A inserção da Educação Quilombola no contexto da Educação do Campo no Ceará</h2>
+                        <p>Apresentado no Simpósio Internacional de Geografia Agrária, surgiu a partir das atividades do projeto de extensão que tratava sobre a Formação dos Professores do e no campo no Ceará.  Esse trabalho apresentou experiências vivenciadas no contexto da educação escolar quilombola no semestre de 2018.2  em uma comunidade no município de Tamboril-CE, no trabalhado apresentamos o contexto da educação escolar quilombola e como essa parcela da educação é tratada em segundo plano e a passos lentos. O trabalho ainda discute sobre a construção de um currículo para a educação escolar quilombola pautado na lei 10.639, apresenta as práticas pedagógicas desenvolvidas na escola da comunidade quilombola Encantados do Bom Jardim- Tamboril/CE. Esse trabalho é muito importante pois surge de um projeto que visa a inserção das comunidades quilombolas dentro do contexto da Educação do Campo no Cerará, fazendo um levantamento do que realmente estrutura-se como educação escolar quilombola e um entendimento da Lei 10.639/03 e quais os impactos dela para a Educação Quilombola.</p>
+                        <a href="https://singa19.files.wordpress.com/2020/10/versao-final-anais-ix-simposio-internacional-de-geografia-agraria-e-x-simposio-nacional-de-geografia-agraria-2019.pdf" target="_blank">Saiba +</a>
+                        <img src="./assets/img/anais.png" alt="">
+                    </li>
 
-                <div class="principal__projetos__projeto principal__projetos__projeto-invertido">
-                    <div class="bloco imagem">
-                        <img src="assets/ilustrativo.png" alt="">
-                    </div>
+                    <li class="projeto rounded-xl shadow-md">
+                        <h2>Formação docente e práticas pedagógicas para as escolas do/no campo do Ceará</h2>
+                        <p>Um projeto de extensão que visava fornecer instrumentos teóricos e metodológicos que pudessem atender as demandas dos projetos políticos pedagógicos (PPP) das escolas contextualizadas. Visava contribuir com uma formação e participação social e política dos estudantes de Geografia e auxiliar na educação continuada dos professores dessas escolas através do intercâmbio Universidade X Educação básica. Como bolsista desse projeto, fui responsável por organizar as oficinas que era disponibilizadas para os professores e também comunidade escolar das escolas que atuamos, as oficinas tratavam de tecnologias, geotecnologias, educação, currículo, questões sociais e outros temas diversos.</p>
+                        <a href="https://docs.google.com/presentation/d/1TipiRDjD2CQQs3A3G-quP_tCrE3RSJ2E0cpv9QK52Io/edit?pli=1#slide=id.g8730fcbb4f_0_6" target="_blank">Saiba +</a>
+                        <img src="./assets/img/trabalhoaninha.png" alt="">
+                    </li>
 
-                    <div class="bloco conteudo">
-                        <h2 class="principal__projetos__projeto__titulo">Titulo</h2>
+                    <li class="projeto rounded-xl shadow-md">
+                        <h2>Educação, Território e Identidade no contexto das Comunidades Quilombolas do Ceará</h2>
+                        <p>Publicado em conjunto com uma colega, Natália Lidia na revista Giramundo do colégio Pedro II, fala sobre educação para as comunidades quilombolas e como falar sobre isso é falar sobre a luta por seus territórios.  O Trabalho visa traçar uma relação entre Identidade, Território e Educação na realidade das comunidades quilombolas.</p>
+                        <a href="https://portalespiral.cp2.g12.br/index.php/GIRAMUNDO/issue/view/227" target="_blank">Saiba +</a>
+                        <img src="./assets/img/giramundo.png" alt="">
+                    </li>
+                  
+                </ul>
 
-                        <p class="principal__projetos__projeto__texto">Espaço aberto para o debate acerca das políticas públicas, violações dos direitos humanos e o racismo ambiental através do olhar geográfico</p>   
-                        
-                        <li><a href="#" class="botao__saiba__mais">Saiba +</a></li>                  
-                    </div>                   
-                </div>
+            </section>
 
-                <div class="principal__projetos__projeto">
-                    <div class="bloco conteudo">
-                        <h2 class="principal__projetos__projeto__titulo">Titulo</h2>
-
-                        <p class="principal__projetos__projeto__texto">Espaço aberto para o debate acerca das políticas públicas, violações dos direitos humanos e o racismo ambiental através do olhar geográfico</p>   
-                        
-                        <li><a href="#" class="botao__saiba__mais">Saiba +</a></li>                  
-                    </div>
-
-                    <div class="bloco imagem">
-                        <img src="assets/ilustrativo.png" alt="">
-                    </div>
-                </div>
-
-                <div class="principal__projetos__projeto principal__projetos__projeto-invertido">
-                    <div class="bloco imagem">
-                        <img src="assets/ilustrativo.png" alt="">
-                    </div>
-
-                    <div class="bloco conteudo">
-                        <h2 class="principal__projetos__projeto__titulo">Titulo</h2>
-
-                        <p class="principal__projetos__projeto__texto">Espaço aberto para o debate acerca das políticas públicas, violações dos direitos humanos e o racismo ambiental através do olhar geográfico</p>   
-                        
-                        <li><a href="#" class="botao__saiba__mais">Saiba +</a></li>                  
-                    </div>                   
-                </div>
-            </div>
-       </section>         
+        </div>
     </main>
 
     <footer class="rodape">
-        <p>Feito por Natanael Junior</p>
-        <a href="https://www.linkedin.com/in/njunior93/"><img src="assets/linkedin.svg" alt=""></a>
+        <div class="rodape__conteudo">
+            <p>Desenvolvido por Natanael Junior</p>
+            <a href="https://www.linkedin.com/in/njunior93/" target="_blank"><img src="./assets/img/linkedin.svg" alt=""></a>
+        </div>        
     </footer>
+    
 </body>
 </html>

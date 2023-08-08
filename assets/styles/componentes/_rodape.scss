@@ -1,0 +1,27 @@
+@import '../abstract/variaveis';
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $cor-principal;
+    padding: 1rem 0;
+    
+}
+
+.rodape__conteudo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    font-family: $fonte-principal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: $fonte-tamanho;
+    color: $preto;
+    img{
+        width: 50%;
+        cursor: pointer;
+    }
+    
+}
+

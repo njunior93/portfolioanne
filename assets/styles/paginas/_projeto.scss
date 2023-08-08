@@ -1,0 +1,138 @@
+@import '../abstract/variaveis';
+
+.principal__projetos__conteudo{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "titulo"
+    "projetos";
+    .titulo{
+        grid-area: titulo;
+        text-align: justify;
+        grid-area: titulo;
+        font-size: $fonte-tamanho *2.5;
+        font-weight: 500;
+        font-family: $fonte-titulo;
+        text-align: center;
+        margin: 5em 0;
+        color: $preto;
+    }
+}
+
+.principal__projetos{
+    grid-area: projetos;
+    margin-bottom: 8em;
+    .principal__conteudo__projetos__lista{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8em;
+        .projeto{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "titulo-projeto imagem-projeto"
+            "texto-projeto imagem-projeto"
+            "botao-projeto imagem-projeto";
+            background: linear-gradient(300deg, rgba(255,255,255,1) 80%, rgba(227,244,244,1) 20%, rgba(227,244,244,1) 20%);
+            column-gap: 1em;
+            row-gap: 2em;
+            border-radius: 8px;
+            padding: 2em;
+            //box-shadow: $cor-texto 0px 20px 30px -10px;
+            transition: 1s all;
+            width: 100%;
+            h2{
+                grid-area: titulo-projeto;
+                font-family: $fonte-titulo;
+                font-size: $fonte-tamanho * 1.5;
+                font-weight: 400;
+                width: auto;  
+                align-self: center;
+                justify-self: start;
+                color: $preto;
+            }
+            p{
+                grid-area: texto-projeto;
+                font-family: $fonte-texto;
+                font-size: $fonte-tamanho;
+                color: $cor-texto;
+                text-align: justify;
+                align-self: center;
+                line-height: 1.5em;
+            }
+            a{
+                grid-area: botao-projeto;
+                width: auto;
+                padding: 0.5em;
+                border-radius: 8px;
+                text-decoration: none;
+                font-family: $fonte-principal;   
+                font-size: $fonte-tamanho / 1.3;
+                color: $preto;
+                background-color: $cor-secundario;
+                align-self: center;
+                max-width: 60px;
+                text-align: center;
+                &:hover{
+                    background-color: $cor-principal;
+                    font-weight: bold;
+                }
+            }
+            img{
+                grid-area: imagem-projeto;
+                width: 100%;
+                align-self: center;
+                justify-self: center;
+            }
+            &:hover{
+                box-shadow: 0px 20px 5px 0px $cor-texto ;
+            }
+        }
+    }
+}
+
+.botao__redes:checked~.lista__navegacao-redes{
+    display: block;
+}
+
+@media screen and (max-width:414px){
+    .principal__projeto{
+        width: 100%;
+        .principal__projetos__conteudo{
+            .principal__conteudo__projetos__lista{
+                .projeto{
+                    h2{
+                        font-size: $fonte-tamanho;
+                    }
+                    a{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (min-width:320px) and (max-width: 834px){
+    .principal__projetos__conteudo{
+        .titulo{
+            font-size: $fonte-tamanho * 1.4;
+        }   
+        .principal__conteudo__projetos__lista{
+            .projeto{
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                grid-template-columns: 100%;
+                grid-template-areas:
+                "titulo-projeto"
+                "imagem-projeto"
+                "texto-projeto"
+                "botao-projeto";
+                img{
+                    border: 1px solid $preto;
+                }
+                
+            }
+        }
+    }
+}

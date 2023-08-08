@@ -1,0 +1,109 @@
+@import '../abstract/variaveis';
+
+.principal__index{
+    background-color: white;
+}
+
+.principal__index__conteudo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "banner texto";
+    column-gap: 1em;
+    padding: 2rem;
+    .principal__index__conteudo-banner{
+        grid-area: banner;
+        align-self: center;
+        .banner{
+            width: 100%;
+        }     
+    }
+    .principal__index__conteudo-texto{
+        grid-area: texto;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+        "titulo"
+        "texto"
+        "botoes";
+        row-gap: 2rem;
+        .titulo{
+            text-align: justify;
+            grid-area: titulo;
+            font-size: $fonte-tamanho * 2.4;
+            font-weight: 500;
+            font-family: $fonte-titulo;
+            text-align: center;
+            max-width: 410px;
+            color: $preto;
+        }   
+        .texto{
+            grid-area: texto;
+            font-family: $fonte-texto;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: $cor-texto;
+            text-align: justify;
+            max-width: 400px;
+        }
+        .botoes{
+            grid-area: botoes;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            column-gap: 0.5rem;
+            .botao{
+                padding: 0.4em;
+                border-radius: 8px;
+                text-decoration: none;
+                font-family: $fonte-principal;   
+                color: $preto;
+                &:first-child{  
+                    background-color: $cor-secundario;
+                }
+                &:first-child:hover{
+                    background-color: $cor-principal;
+                    font-weight: bold;
+                }
+                &:last-child{
+                    border: 1px solid $cor-principal;
+                }
+                &:last-child:hover{
+                    background-color: $cor-principal;
+                    font-weight: bold;               
+                    color: $preto;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 414px){
+    .principal__index{
+        width: 100%;
+        .principal__index__conteudo-texto{
+            .titulo{
+                font-size: $fonte-tamanho * 1.6;
+            }
+            .botoes{
+                justify-content: center;
+            }
+        }      
+    }   
+}
+
+@media screen and (max-width: 1023px){
+    .principal__index__conteudo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }   
+
+}
+
+
+
+
+

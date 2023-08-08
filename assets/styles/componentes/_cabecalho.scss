@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $cor-principal;
+    .navegacao{
+        width: 50%;
+        padding: 1rem 0;
+    }
+}
+
+.lista__navegacao{
+    display: flex;
+    justify-content: space-between;
+    .lista__navegacao-item{
+        font-family: $fonte-principal;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: $fonte-tamanho;
+        color: $preto;
+    }
+}
+
+.lista__navegacao-redes{
+    li{
+        padding: 1em 1em;
+        border: 1px solid $preto;
+        border-top: none;
+        font-family: $fonte-principal;    
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:480px){
+    .cabecalho{
+        .navegacao{      
+            padding: 1rem;     
+            margin: 0;
+            width: 100%;
+            .lista__navegacao{
+                justify-content: space-between;
+                .lista__navegacao-item{
+                    font-size: $fonte-tamanho / 1.2;
+                }
+            }
+            .lista__navegacao-redes{
+                top:199%;
+            }
+        }
+    }
+    .rodape{
+        .rodape__conteudo{
+            column-gap: 0.2rem;
+            font-size: 12px;
+        }
+    }   
+}
+

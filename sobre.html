@@ -3,64 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">   
-    <link rel="stylesheet" href="styles/sobre.css">
-    <title>Sobre mim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        azul:{
+                            principal: '#C4DFDF',
+                            secundario: '#D2E9E9',
+                            terceario: '#E3F4F4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/cabecalho.css">
+    <link rel="stylesheet" href="./assets/styles/rodape.css">
+    <title>Document</title>
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__lista__navegacao">
-            <ul class="cabecalho__lista__navegacao__itens">
-                <li class="cabecalho__lista__navegacao__item"><a href="index.html" class="cabecalho__lista__navegacao__link">Inicio</a></li>
-                <li class="cabecalho__lista__navegacao__item"><a href="projetos.html" class="cabecalho__lista__navegacao__link">Projetos</a></li> 
+        <nav class="navegacao ml-12">
+
+            <ul class="lista__navegacao relative">
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="index.html">Inicio</a></li>
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="projetos.html">Projetos</a></li>
                 
-                <input type="checkbox" id="opção-redes-sociais" class="botao-redes-sociais">
+                <input type="checkbox" id="botao__redes" class="botao__redes hidden">
 
-                <div class="container__redes-sociais">
-                    <label for="opção-redes-sociais">
-                            <li class="opcao-redes-sociais-item">Redes Sociais</li>
-                            <img class="opcao-redes-sociais-item-sanduiche"  src="assets/menu-sanduiche.png" alt="">
-                    </label>
-                </div>
-
-                <div class="lista-rede-sociais">                                                               
-                    <ul class="opcoes-redes-sociais">                      
-                        <h2 class="opcoes-redes-sociais-titulo">Redes Sociais</h2>
-                        <li class="rede-social-item linkedin"><a class="rede-social-link" href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/">Linkedin</a></li>
-                        <li class="rede-social-item instagram"><a class="rede-social-link" href="https://www.instagram.com/_annecatherine/">Instagram</a></li>
-                    </ul>
-                </div>
+                <label for="botao__redes">
+                    <li class="lista__navegacao-item cursor-pointer">
+                            <span class="absolute -right-1 -top-2 flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                            </span>
+                        Rede Sociais
+                    </li>
+                </label>      
+                
+                <ul class="lista__navegacao-redes absolute top-10 -right-2 text-center hidden">
+                    <li class="lista__navegacao-item hover:bg-azul-principal"><a href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/" class="lista__navegacao-link" target="_blank">Linkedin</a></li>
+                    <li class="lista__navegacao-item hover:bg-azul-principal"><a href="https://www.instagram.com/_annecatherine/" class="lista__navegacao-link" target="_blank">Instagram</a></li>
+                </ul> 
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="container-principal">
-             <div class="principal__titulo">
-                 <h1>Sobre mim</h1>
-                 <hr>
-             </div>
-             
-             <section class="principal-conteudo">
-                <div class="principal-sobre">
-                    <p class="principal-sobre-texto">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol parela maxime infena. xcepteur sint occaecat cupidatat non.
-                    </p>
-                </div>
-                    
-                <div class="principal-imagem">
-                        <img src="assets/teste.png" alt="foto da anne catherine">
-                </div>
+    <main class="principal__sobre ">
+
+        <h1 class="titulo">Sobre mim</h1>
+
+        <div class="principal__sobre__conteudo rounded-xl shadow-md">
+
+            <section class="principal__conteudo__sobre__texto">
+                <p class="texto">Sou completamente apaixonada pela Geografia. Essa ciência me formou professora, geografa e um ser humano muito mais consciente do mundo e de mim mesma no mundo. Ela me deu um mundo todo, fui a diversos lugares em aulas de campos na geografia, fiz muitos amigos, participei de muitos eventos e sempre acho que tem mais a aprender sobre a geografia. A Educação foi o caminho que encontrei pra ser mais, acredito piamente no poder que a educação tem de transformar as realidades. Sou uma leitora ávida, acredito que a leitura é viajar mil mundos sem sair do lugar, adoro livros físicos. Gosto muito de música, meus passeios favoritos são shows das minhas bandas e cantores favoritos. Adoro passar muito tempo com a minha família, com os meus amigos e o meu amor.  Essas são só algumas das muitas coisas que sou como pessoa.</p>
             </section>
-            
-             </div>
-        </section>         
-     </main>
 
-     <footer class="rodape">
-        <p>Feito por Natanael Junior</p>
-        <a href="https://www.linkedin.com/in/njunior93/"><img src="assets/linkedin.svg" alt=""></a>
+            <section class="principal__conteudo__sobre__banner">
+                <img src="./assets/img/banner1.png" alt="">
+                <img src="./assets/img/banner2.png" alt="">
+                <img src="./assets/img/banner3.png" alt="">
+                <img src="./assets/img/banner4.png" alt="">
+            </section>
+        </div>      
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <p>Desenvolvido por Natanael Junior</p>
+            <a href="https://www.linkedin.com/in/njunior93/" target="_blank"><img src="./assets/img/linkedin.svg" alt=""></a>
+        </div>        
     </footer>
-
 </body>
 </html>

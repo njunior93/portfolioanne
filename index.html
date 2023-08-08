@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style-home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Inicio</title>
 </head>
-<body>
+<body>  
     <header class="cabecalho">
-        <nav class="cabecalho__lista__navegacao">
-            <ul class="cabecalho__lista__navegacao__itens">
-                <li class="cabecalho__lista__navegacao__item"><a href="index.html" class="cabecalho__lista__navegacao__link">Inicio</a></li>
-                <li class="cabecalho__lista__navegacao__item"><a href="sobre.html" class="cabecalho__lista__navegacao__link">Sobre mim</a></li>            
+        <nav class="navegacao">
+
+            <ul class="lista__navegacao">
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="index.html">Inicio</a></li>
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="sobre.html">Sobre mim</a></li>
+                <li class="lista__navegacao-item"><a class="lista__navegacao-link" href="projetos.html">Projetos</a></li>
             </ul>
+
         </nav>
     </header>
-    
-    <main class="container-principal">
-        <section class="principal">
-            <div class="principal__conteudo">
-                <h1 class="principal__conteudo__titulo">Olá, meu nome é Anne Catherine</h1>
-                <p class="principal__conteudo__texto">Sou formada em Licenciatura plena em Geografia e atualmente curso o bacharelado no mesmo curso. Desenvolvo pesquisas voltadas para a área da educação e do ensino de geografia. Atualmente tenho como foco principal atuar na area do ensino.</p>
-                <div class="principal__conteudo__botoes">
-                    <a href="projetos.html" class="principal__conteudo__botoes__link projetos">Projetos</a>
-                    <a href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/" class="principal__conteudo__botoes__link linkedin">Linkedin</a>
-                </div>
-           </div>
 
-            <div class="principal__imagem">
-                <img src="assets/aninha.png" class="imagem" alt="Imagem da Anne Catherine">
-            </div>
-        </section>
+    <main class="principal__index rounded-xl shadow-md">
+        <div class="principal__index__conteudo">
+            <section class="principal__index__conteudo-banner">
+                <img class="banner" src="assets/img/aninha.png" alt="">
+            </section>
+            
+
+            <section class="principal__index__conteudo-texto">
+                <div class="titulo">
+                    <h2>Olá, meu nome é Anne Catherine</h2>
+                </div>
+                
+                <div class="texto">
+                    <p>Sou formada em Licenciatura em Geografia pela Universidade Federal do Ceará, possuo MBA em Gestão Escolar pela Faculdade Descomplica e atualmente curso o Mestrado em Geografia pela Universidade Federal do Ceará. Desenvolvo pesquisas sobre a educação escolar quilombola, educação do campo, o ensino de geografia, a geografia e as relações étnicos raciais, o racismo ambiental e a questão da fome. Tenho como foco atuar com o ensino de Geografia.</p>
+                </div>
+    
+                <div class="botoes">
+                    <a class="botao" href="https://www.linkedin.com/in/anne-catherine-ferreira-0934a1229/" target="_blank">Linkedin</a>
+                    <a class="botao" href="projetos.html">Projetos</a>  
+                </div>
+            </section>
+            
+        </div>
     </main>
-    
+
     <footer class="rodape">
-        <p>Feito por Natanael Junior</p>
-        <a href="https://www.linkedin.com/in/njunior93/"><img src="assets/linkedin.svg" alt=""></a>
+        <div class="rodape__conteudo">
+            <p>Desenvolvido por Natanael Junior</p>
+            <a href="https://www.linkedin.com/in/njunior93/" target="_blank"><img src="./assets/img/linkedin.svg" alt=""></a>
+        </div>        
     </footer>
-    
 </body>
 </html>
