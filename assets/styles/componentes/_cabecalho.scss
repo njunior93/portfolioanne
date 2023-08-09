@@ -39,9 +39,9 @@
             margin: 0;
             width: 100%;
             .lista__navegacao{
-                justify-content: space-between;
+                justify-content: space-around;
                 .lista__navegacao-item{
-                    font-size: $fonte-tamanho / 1.2;
+                    font-size: $fonte-tamanho;
                 }
             }
             .lista__navegacao-redes{
