@@ -40,8 +40,7 @@
             .lista__navegacao{
                 justify-content: space-around;
                 .lista__navegacao-item{
-                    border: none;
-                    font-size: $fonte-tamanho / 1.1;
+                    font-size: $fonte-tamanho / 1.2;
                 }
             }         
         }
@@ -57,12 +56,9 @@
 //CORRECAO LISTA REDES CABECALHO
 
 @media screen and (min-width: 320px) and (max-width:660px){
-    .lista__navegacao-redes{        
+    .lista__navegacao-redes{
         top: 200%;
-        right: 4%;
-        li{
-            border: none;
-        }
+        right: 6%;
     }
 }
 
