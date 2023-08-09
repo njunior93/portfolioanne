@@ -1,4 +1,4 @@
-.principal__sobre{  
+.principal__sobre{
     .titulo{
         text-align: justify;
         grid-area: titulo;
@@ -12,6 +12,8 @@
 }
 
 .principal__sobre__conteudo{
+    
+    background-color: white;
     display: grid;
     justify-content: center;
     row-gap: 3em;
@@ -55,7 +57,6 @@
             font-size: $fonte-tamanho * 1.4;
         }
         .principal__sobre__conteudo{
-            background-color: white;
             .principal__conteudo__sobre__texto{
                 p{
                     font-size: 15px;
