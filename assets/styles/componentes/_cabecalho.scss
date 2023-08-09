@@ -32,21 +32,18 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width:480px){
+@media screen and (min-width: 320px) and (max-width:600px){
     .cabecalho{
-        .navegacao{      
-            padding: 1rem;     
+        .navegacao{    
             margin: 0;
             width: 100%;
             .lista__navegacao{
                 justify-content: space-around;
                 .lista__navegacao-item{
-                    font-size: $fonte-tamanho;
+                    border: none;
+                    font-size: $fonte-tamanho / 1.1;
                 }
-            }
-            .lista__navegacao-redes{
-                top:199%;
-            }
+            }         
         }
     }
     .rodape{
@@ -55,5 +52,17 @@
             font-size: 12px;
         }
     }   
+}
+
+//CORRECAO LISTA REDES CABECALHO
+
+@media screen and (min-width: 320px) and (max-width:660px){
+    .lista__navegacao-redes{        
+        top: 200%;
+        right: 4%;
+        li{
+            border: none;
+        }
+    }
 }
 

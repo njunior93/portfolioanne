@@ -50,25 +50,31 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .cabecalho .navegacao {
-    padding: 1rem;
     margin: 0;
     width: 100%;
   }
   .cabecalho .navegacao .lista__navegacao {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .cabecalho .navegacao .lista__navegacao .lista__navegacao-item {
-    font-size: 0.8333333333rem;
-  }
-  .cabecalho .navegacao .lista__navegacao-redes {
-    top: 199%;
+    border: none;
+    font-size: 0.9090909091rem;
   }
   .rodape .rodape__conteudo {
     -moz-column-gap: 0.2rem;
          column-gap: 0.2rem;
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 660px) {
+  .lista__navegacao-redes {
+    top: 200%;
+    right: 4%;
+  }
+  .lista__navegacao-redes li {
+    border: none;
   }
 }
 .rodape {
