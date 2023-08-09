@@ -59,7 +59,7 @@ main {
     justify-content: space-around;
   }
   .cabecalho .navegacao .lista__navegacao .lista__navegacao-item {
-    font-size: 0.8333333333rem;
+    font-size: 1rem;
   }
   .rodape .rodape__conteudo {
     -moz-column-gap: 0.2rem;
