@@ -50,7 +50,7 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 660px) {
   .cabecalho .navegacao {
     margin: 0;
     width: 100%;
@@ -69,8 +69,7 @@ main {
 }
 @media screen and (min-width: 320px) and (max-width: 660px) {
   .lista__navegacao-redes {
-    top: 200%;
-    right: 6%;
+    margin-right: 8%;
   }
 }
 .rodape {

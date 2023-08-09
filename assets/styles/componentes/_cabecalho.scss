@@ -32,7 +32,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width:600px){
+@media screen and (min-width: 320px) and (max-width:660px){
     .cabecalho{
         .navegacao{    
             margin: 0;
@@ -42,6 +42,7 @@
                 .lista__navegacao-item{
                     font-size: $fonte-tamanho;
                 }
+             
             }         
         }
     }
@@ -57,8 +58,7 @@
 
 @media screen and (min-width: 320px) and (max-width:660px){
     .lista__navegacao-redes{
-        top: 200%;
-        right: 6%;
+        margin-right: 8%;
     }
 }
 
