@@ -6,6 +6,6 @@ Para colocar em pratica tudo que eu aprendi no inicio da minha caminhada para De
 
 Para conferir, clicar na imagem abaixo:
 
-<p><a href="https://portfolioannecatherine.vercel.app/"></a><img src="/img/annecatherine.JPG"></a></p>
+<p><a href="https://portfolioannecatherine.vercel.app/"><img src="/img/annecatherine.JPG"></a></p>
 
 
